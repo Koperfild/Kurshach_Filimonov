@@ -23,7 +23,9 @@
         ListBox8.Items.Clear()
         ListBox9.Items.Clear()
         ListBox10.Items.Clear()
-        Nuton(t, Eps, koren2)
+        MullerMethod(a, b, Eps, koren2)
+        'SecantMethod(a, b, Eps, koren2)
+        'Nuton(t, Eps, koren2)
         vivod(koren2, TextBox8)
         vivod(Func1(koren2), TextBox9)
     End Sub

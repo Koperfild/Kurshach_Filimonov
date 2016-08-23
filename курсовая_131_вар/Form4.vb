@@ -6,7 +6,9 @@
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         c = vvod(TextBox3)
         d = vvod(TextBox4)
-        Dixotomia(c, d, Eps, x_min)
+        Eps = 0.004
+        ParabolaExtremum(c, d, Eps, x_min)
+        'Dixotomia(c, d, Eps, x_min)
         vivod(x_min, TextBox1)
         vivod(Func2(x_min), TextBox2)
 

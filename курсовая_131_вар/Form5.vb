@@ -11,7 +11,9 @@
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         t = 1
         xk = vvod(TextBox3)
-        Simpson(xk, x_min, Eps, S, t)
+        x_min = vvod(TextBox4)
+        'Simpson(xk, x_min, Eps, S, t)
+        TrapeziumIntegration(xk, x_min, Eps, S, t)
         vivod(S, TextBox5)
     End Sub
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
