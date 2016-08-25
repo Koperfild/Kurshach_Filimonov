@@ -1,11 +1,11 @@
 ﻿Public Class Form5
     'Ввод данных
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        a = vvod(TextBox1)
-        b = vvod(TextBox2)
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        a = vvod(TextBox3)
+        b = vvod(TextBox4)
         Simpson(a, b, Eps, S, t)
-        vivod(x_min, TextBox4)
-        vivod(xk, TextBox3)
+        'vivod(x_min, TextBox4)
+        'vivod(xk, TextBox3)
         vivod(S, TextBox6)
     End Sub
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
@@ -18,5 +18,10 @@
     End Sub
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         End
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        vivod(xk, TextBox3)
+        vivod(x_min, TextBox4)
     End Sub
 End Class

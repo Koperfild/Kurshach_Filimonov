@@ -98,8 +98,10 @@ Module Module1
         Dim q As Double
         Dim A, B, C As Double 'Коэф-ты в уравнении интерполирующей параболы
         Dim MaxABSDenominator As Double
+        Dim count = 0
 
         While Abs(x2 - x0) > Eps
+            count += 1
             q = (x2 - x1) / (x1 - x0)
             A = q * Func1(x2) - q * (1 + q) * Func1(x1) + q * q * Func1(x0)
             B = (2 * q + 1) * Func1(x2) - (1 + q) * (1 + q) * Func1(x1) + q * q * Func1(x0)
@@ -114,34 +116,13 @@ Module Module1
             x0 = x1
             x1 = x2
             x2 = x3
+            vivodlist(count, Form2.ListBox1)
+            vivodlist(x1, Form2.ListBox2)
+            vivodlist(Func1(x1), Form2.ListBox3)
         End While
         solution = x2
     End Sub
 
-    ' Нахождение решения нелинейного уравнения методом половинного деления
-    Sub Reshenie(ByVal a As Double, ByVal b As Double, ByVal EE As Double, ByRef solution As Double)
-        Dim n As Integer
-        Dim c As Double
-        n = 0
-        c = (a + b) / 2
-        Do
-            n = n + 1
-            If Func1(c) * Func1(b) < 0 Then
-                a = c
-            Else
-                b = c
-            End If
-            vivodlist(n, Form2.ListBox1)
-            vivodlist(a, Form2.ListBox2)
-            vivodlist(Func1(a), Form2.ListBox3)
-            vivodlist(b, Form2.ListBox4)
-            vivodlist(Func1(b), Form2.ListBox5)
-            c = (a + b) / 2
-            vivodlist(c, Form2.ListBox6)
-            vivodlist(Func1(c), Form2.ListBox7)
-        Loop Until (Abs(b - a) <= EE)
-        solution = c
-    End Sub
     ' Нахождение решения нелинейного уравнения методом Ньютона
     Sub Nuton(ByVal a As Double, ByVal Eps As Double, ByRef solution As Double)
         Dim t, x, f2 As Double ' x - начальное приближение к корню
@@ -161,9 +142,9 @@ Module Module1
     End Sub
     Sub choice(ByVal koren1 As Double, ByVal koren2 As Double)
         If Abs(koren1) < Abs(koren2) Then
-            xk = koren1
-        Else
             xk = koren2
+        Else
+            xk = koren1
         End If
     End Sub
 
@@ -173,6 +154,7 @@ Module Module1
                   ByRef x_min As Double) ' x_min - минимальное значение функции на [a;b]
         Dim h, x0, x1, tempX, denominator As Double
         Dim numerator, temp1, temp2, temp3 As Double
+        Dim counter = 0
         'Проверяем функцию на убывание (f(xk+1) < f(xk))
         If F1proizv(a) >= 0 Then 'Функция увеличивается
             Return
@@ -180,17 +162,16 @@ Module Module1
         h = 0.005
         x0 = a
         Do
-            tempX = x1
+            counter += 1
             x1 = x0 - h / 2 * ((Func2(x0 + h) - Func2(x0 - h)) / (Func2(x0 + h) - 2 * Func2(x0) + Func2(x0 - h)))
-            temp1 = Func2(x0 + h)
-            temp2 = Func2(x0 - h)
-            numerator = Func2(x0 + h) - Func2(x0 - h)
-            denominator = (Func2(x0 + h) - 2 * Func2(x0) + Func2(x0 - h))
-            temp3 = x0 - ((h * numerator) / (denominator * 2))
+
             'If denominator <= 0 Then Не стал делать проверку
             x1 = RecursiveLesseningStep(x1, x0)
-            x0 = tempX
-        Loop Until F2proizv(x1) < Eps
+            x0 = x1
+            vivodlist(counter, Form4.ListBox1)
+            vivodlist(x1, Form4.ListBox2)
+            vivodlist(Func2(x1), Form4.ListBox3)
+        Loop Until Abs(F2proizv(x1)) < Eps
         x_min = x1
     End Sub
 
@@ -205,38 +186,9 @@ Module Module1
             Return x1
         End If
         x1 = x0 + (x1 - x0) / 2
-        RecursiveLesseningStep(x1, x0)
+        Return RecursiveLesseningStep(x1, x0)
     End Function
 
-    ' Подпрограмма для одномерной оптимизации функции Func1 методом Дихотомии
-    Sub Dixotomia(ByVal a As Double, ByVal b As Double, ByVal Eps As Double,
-                  ByRef x_min As Double) ' x_min - минимальное значение функции на [a;b]
-        Dim d, x1, x2, delta_n As Double
-        Randomize()
-        Dim n As Integer
-        n = 0
-        d = Eps / 2 * Rnd() ' d - параметр метода
-        Do
-            n = n + 1
-            x1 = (a + b) / 2 - d
-            x2 = (a + b) / 2 + d
-            delta_n = b - a
-            vivodlistINT(n, Form4.ListBox1)
-            vivodlist(a, Form4.ListBox2)
-            vivodlist(b, Form4.ListBox3)
-            vivodlist(x1, Form4.ListBox4)
-            vivodlist(x2, Form4.ListBox5)
-            vivodlist(Func2(x1), Form4.ListBox6)
-            vivodlist(Func2(x2), Form4.ListBox7)
-            vivodlist(delta_n, Form4.ListBox8)
-            If Func2(x1) > Func2(x2) Then
-                a = x1
-            Else
-                b = x2
-            End If
-        Loop Until b - a <= Eps
-        x_min = (a + b) / 2
-    End Sub
     ' Подпрограмма - функция для вычисления интеграла методом Симпсона
     'Параметр T определяет, интеграл какой функции будет расчитываться. Если Т=1, то расчитывается функция 
     ' Func3(x) (необходимая для вычисления площади области, ограниченной функциями f1(x) и f2(x)), 
@@ -279,10 +231,7 @@ Module Module1
                 vivodlist(n, Form5.ListBox1)
                 vivodlist(h, Form5.ListBox2)
                 vivodlist(S, Form5.ListBox3)
-            Else
-                vivodlist(n, Form5.ListBox4)
-                vivodlist(h, Form5.ListBox5)
-                vivodlist(S, Form5.ListBox6)
+
             End If
         Loop Until Abs(S - s1) / 15 < Eps
     End Sub

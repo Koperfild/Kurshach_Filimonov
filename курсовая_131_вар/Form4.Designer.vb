@@ -23,36 +23,28 @@ Partial Class Form4
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form4))
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.Button2 = New System.Windows.Forms.Button
-        Me.Button3 = New System.Windows.Forms.Button
-        Me.TextBox1 = New System.Windows.Forms.TextBox
-        Me.TextBox2 = New System.Windows.Forms.TextBox
-        Me.TextBox3 = New System.Windows.Forms.TextBox
-        Me.TextBox4 = New System.Windows.Forms.TextBox
-        Me.ListBox1 = New System.Windows.Forms.ListBox
-        Me.ListBox2 = New System.Windows.Forms.ListBox
-        Me.ListBox3 = New System.Windows.Forms.ListBox
-        Me.ListBox4 = New System.Windows.Forms.ListBox
-        Me.ListBox5 = New System.Windows.Forms.ListBox
-        Me.ListBox6 = New System.Windows.Forms.ListBox
-        Me.ListBox7 = New System.Windows.Forms.ListBox
-        Me.ListBox8 = New System.Windows.Forms.ListBox
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox
-        Me.Label7 = New System.Windows.Forms.Label
-        Me.Label8 = New System.Windows.Forms.Label
-        Me.Label9 = New System.Windows.Forms.Label
-        Me.Label10 = New System.Windows.Forms.Label
-        Me.Label11 = New System.Windows.Forms.Label
-        Me.Label12 = New System.Windows.Forms.Label
-        Me.Label13 = New System.Windows.Forms.Label
-        Me.Label14 = New System.Windows.Forms.Label
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.ListBox2 = New System.Windows.Forms.ListBox()
+        Me.ListBox3 = New System.Windows.Forms.ListBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -126,7 +118,7 @@ Partial Class Form4
         '
         Me.ListBox2.FormattingEnabled = True
         Me.ListBox2.ItemHeight = 16
-        Me.ListBox2.Location = New System.Drawing.Point(121, 132)
+        Me.ListBox2.Location = New System.Drawing.Point(157, 132)
         Me.ListBox2.Name = "ListBox2"
         Me.ListBox2.Size = New System.Drawing.Size(79, 324)
         Me.ListBox2.TabIndex = 8
@@ -135,55 +127,10 @@ Partial Class Form4
         '
         Me.ListBox3.FormattingEnabled = True
         Me.ListBox3.ItemHeight = 16
-        Me.ListBox3.Location = New System.Drawing.Point(218, 132)
+        Me.ListBox3.Location = New System.Drawing.Point(350, 132)
         Me.ListBox3.Name = "ListBox3"
         Me.ListBox3.Size = New System.Drawing.Size(79, 324)
         Me.ListBox3.TabIndex = 9
-        '
-        'ListBox4
-        '
-        Me.ListBox4.FormattingEnabled = True
-        Me.ListBox4.ItemHeight = 16
-        Me.ListBox4.Location = New System.Drawing.Point(303, 132)
-        Me.ListBox4.Name = "ListBox4"
-        Me.ListBox4.Size = New System.Drawing.Size(79, 324)
-        Me.ListBox4.TabIndex = 10
-        '
-        'ListBox5
-        '
-        Me.ListBox5.FormattingEnabled = True
-        Me.ListBox5.ItemHeight = 16
-        Me.ListBox5.Location = New System.Drawing.Point(400, 132)
-        Me.ListBox5.Name = "ListBox5"
-        Me.ListBox5.Size = New System.Drawing.Size(79, 324)
-        Me.ListBox5.TabIndex = 11
-        '
-        'ListBox6
-        '
-        Me.ListBox6.FormattingEnabled = True
-        Me.ListBox6.ItemHeight = 16
-        Me.ListBox6.Location = New System.Drawing.Point(502, 132)
-        Me.ListBox6.Name = "ListBox6"
-        Me.ListBox6.Size = New System.Drawing.Size(79, 324)
-        Me.ListBox6.TabIndex = 12
-        '
-        'ListBox7
-        '
-        Me.ListBox7.FormattingEnabled = True
-        Me.ListBox7.ItemHeight = 16
-        Me.ListBox7.Location = New System.Drawing.Point(601, 132)
-        Me.ListBox7.Name = "ListBox7"
-        Me.ListBox7.Size = New System.Drawing.Size(79, 324)
-        Me.ListBox7.TabIndex = 15
-        '
-        'ListBox8
-        '
-        Me.ListBox8.FormattingEnabled = True
-        Me.ListBox8.ItemHeight = 16
-        Me.ListBox8.Location = New System.Drawing.Point(696, 132)
-        Me.ListBox8.Name = "ListBox8"
-        Me.ListBox8.Size = New System.Drawing.Size(79, 324)
-        Me.ListBox8.TabIndex = 16
         '
         'Label1
         '
@@ -242,7 +189,7 @@ Partial Class Form4
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(306, 1)
+        Me.PictureBox1.Location = New System.Drawing.Point(303, 2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(253, 50)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -254,84 +201,54 @@ Partial Class Form4
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(57, 113)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(16, 17)
+        Me.Label7.Size = New System.Drawing.Size(32, 17)
         Me.Label7.TabIndex = 24
-        Me.Label7.Text = "n"
+        Me.Label7.Text = "шаг"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(143, 115)
+        Me.Label8.Location = New System.Drawing.Point(119, 112)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(15, 17)
+        Me.Label8.Size = New System.Drawing.Size(155, 17)
         Me.Label8.TabIndex = 25
-        Me.Label8.Text = "c"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(252, 113)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(16, 17)
-        Me.Label9.TabIndex = 26
-        Me.Label9.Text = "d"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(327, 112)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(22, 17)
-        Me.Label10.TabIndex = 27
-        Me.Label10.Text = "x1"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(428, 112)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(22, 17)
-        Me.Label11.TabIndex = 28
-        Me.Label11.Text = "x2"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(523, 112)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(36, 17)
-        Me.Label12.TabIndex = 29
-        Me.Label12.Text = "f(x1)"
+        Me.Label8.Text = "Приближение к корню"
         '
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(624, 112)
+        Me.Label13.Location = New System.Drawing.Point(280, 112)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(36, 17)
+        Me.Label13.Size = New System.Drawing.Size(221, 17)
         Me.Label13.TabIndex = 30
-        Me.Label13.Text = "f(x2)"
+        Me.Label13.Text = "Значение функции в этой точке"
         '
-        'Label14
+        'Label15
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(710, 112)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(55, 17)
-        Me.Label14.TabIndex = 31
-        Me.Label14.Text = "delta_n"
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(562, 18)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(125, 17)
+        Me.Label15.TabIndex = 32
+        Me.Label15.Text = "методом парабол"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(412, 79)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(68, 17)
+        Me.Label16.TabIndex = 33
+        Me.Label16.Text = "h = 0.005"
         '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1198, 608)
-        Me.Controls.Add(Me.Label14)
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label13)
-        Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.PictureBox1)
@@ -341,11 +258,6 @@ Partial Class Form4
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ListBox8)
-        Me.Controls.Add(Me.ListBox7)
-        Me.Controls.Add(Me.ListBox6)
-        Me.Controls.Add(Me.ListBox5)
-        Me.Controls.Add(Me.ListBox4)
         Me.Controls.Add(Me.ListBox3)
         Me.Controls.Add(Me.ListBox2)
         Me.Controls.Add(Me.ListBox1)
@@ -373,11 +285,6 @@ Partial Class Form4
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents ListBox2 As System.Windows.Forms.ListBox
     Friend WithEvents ListBox3 As System.Windows.Forms.ListBox
-    Friend WithEvents ListBox4 As System.Windows.Forms.ListBox
-    Friend WithEvents ListBox5 As System.Windows.Forms.ListBox
-    Friend WithEvents ListBox6 As System.Windows.Forms.ListBox
-    Friend WithEvents ListBox7 As System.Windows.Forms.ListBox
-    Friend WithEvents ListBox8 As System.Windows.Forms.ListBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
@@ -387,10 +294,7 @@ Partial Class Form4
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label16 As Label
 End Class

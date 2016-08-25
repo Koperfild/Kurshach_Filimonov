@@ -23,58 +23,28 @@ Partial Class Form5
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form5))
-        Me.TextBox1 = New System.Windows.Forms.TextBox
-        Me.TextBox2 = New System.Windows.Forms.TextBox
-        Me.TextBox3 = New System.Windows.Forms.TextBox
-        Me.TextBox4 = New System.Windows.Forms.TextBox
-        Me.ListBox1 = New System.Windows.Forms.ListBox
-        Me.ListBox2 = New System.Windows.Forms.ListBox
-        Me.ListBox3 = New System.Windows.Forms.ListBox
-        Me.ListBox4 = New System.Windows.Forms.ListBox
-        Me.ListBox5 = New System.Windows.Forms.ListBox
-        Me.ListBox6 = New System.Windows.Forms.ListBox
-        Me.TextBox5 = New System.Windows.Forms.TextBox
-        Me.TextBox6 = New System.Windows.Forms.TextBox
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.Button2 = New System.Windows.Forms.Button
-        Me.Button3 = New System.Windows.Forms.Button
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.Label7 = New System.Windows.Forms.Label
-        Me.Label8 = New System.Windows.Forms.Label
-        Me.Label9 = New System.Windows.Forms.Label
-        Me.Label10 = New System.Windows.Forms.Label
-        Me.Label11 = New System.Windows.Forms.Label
-        Me.Label12 = New System.Windows.Forms.Label
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox
-        Me.Label13 = New System.Windows.Forms.Label
-        Me.Label14 = New System.Windows.Forms.Label
-        Me.Label15 = New System.Windows.Forms.Label
-        Me.Label16 = New System.Windows.Forms.Label
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.ListBox2 = New System.Windows.Forms.ListBox()
+        Me.ListBox3 = New System.Windows.Forms.ListBox()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Button4 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(564, 108)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox1.TabIndex = 0
-        Me.TextBox1.Text = "1"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(742, 108)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox2.TabIndex = 1
-        Me.TextBox2.Text = "2"
         '
         'TextBox3
         '
@@ -117,33 +87,6 @@ Partial Class Form5
         Me.ListBox3.Size = New System.Drawing.Size(67, 196)
         Me.ListBox3.TabIndex = 6
         '
-        'ListBox4
-        '
-        Me.ListBox4.FormattingEnabled = True
-        Me.ListBox4.ItemHeight = 16
-        Me.ListBox4.Location = New System.Drawing.Point(868, 222)
-        Me.ListBox4.Name = "ListBox4"
-        Me.ListBox4.Size = New System.Drawing.Size(67, 196)
-        Me.ListBox4.TabIndex = 7
-        '
-        'ListBox5
-        '
-        Me.ListBox5.FormattingEnabled = True
-        Me.ListBox5.ItemHeight = 16
-        Me.ListBox5.Location = New System.Drawing.Point(981, 222)
-        Me.ListBox5.Name = "ListBox5"
-        Me.ListBox5.Size = New System.Drawing.Size(67, 196)
-        Me.ListBox5.TabIndex = 8
-        '
-        'ListBox6
-        '
-        Me.ListBox6.FormattingEnabled = True
-        Me.ListBox6.ItemHeight = 16
-        Me.ListBox6.Location = New System.Drawing.Point(1115, 222)
-        Me.ListBox6.Name = "ListBox6"
-        Me.ListBox6.Size = New System.Drawing.Size(67, 196)
-        Me.ListBox6.TabIndex = 9
-        '
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(347, 533)
@@ -151,66 +94,23 @@ Partial Class Form5
         Me.TextBox5.Size = New System.Drawing.Size(100, 22)
         Me.TextBox5.TabIndex = 10
         '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(1045, 528)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(111, 22)
-        Me.TextBox6.TabIndex = 11
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(36, 516)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(145, 46)
-        Me.Button1.TabIndex = 12
-        Me.Button1.Text = "Вычислить"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(485, 513)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(148, 46)
         Me.Button2.TabIndex = 13
-        Me.Button2.Text = "Покинуть проэкт"
+        Me.Button2.Text = "Покинуть проект"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(838, 513)
+        Me.Button3.Location = New System.Drawing.Point(26, 516)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(134, 46)
         Me.Button3.TabIndex = 14
         Me.Button3.Text = "Вычислить"
         Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(530, 108)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(28, 17)
-        Me.Label1.TabIndex = 15
-        Me.Label1.Text = "a= "
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(712, 111)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(24, 17)
-        Me.Label2.TabIndex = 16
-        Me.Label2.Text = "b="
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(402, 73)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(470, 17)
-        Me.Label3.TabIndex = 17
-        Me.Label3.Text = "Введем границы отрезка для вычисления оприделенного интеграла :"
         '
         'Label4
         '
@@ -219,8 +119,8 @@ Partial Class Form5
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(626, 17)
         Me.Label4.TabIndex = 18
-        Me.Label4.Text = "Вычислим с точностью Е площадь , ограниченной графиками функции f1(x) и f2(x) x [" & _
-            "Xk;Xmin]"
+        Me.Label4.Text = "Вычислим с точностью Е площадь , ограниченной графиками функции f1(x) и f2(x) x [" &
+    "Xk;Xmin]"
         '
         'Label5
         '
@@ -295,15 +195,6 @@ Partial Class Form5
         Me.Label11.TabIndex = 26
         Me.Label11.Text = "Площадь фигуры S ="
         '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(978, 528)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(49, 17)
-        Me.Label12.TabIndex = 27
-        Me.Label12.Text = "T.e F="
-        '
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
@@ -313,53 +204,22 @@ Partial Class Form5
         Me.PictureBox2.TabIndex = 28
         Me.PictureBox2.TabStop = False
         '
-        'Label13
+        'Button4
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(910, 138)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(231, 17)
-        Me.Label13.TabIndex = 29
-        Me.Label13.Text = "Вычислим значение функции F(x)"
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(865, 202)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(85, 17)
-        Me.Label14.TabIndex = 30
-        Me.Label14.Text = "номер шага"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(956, 202)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(113, 17)
-        Me.Label15.TabIndex = 31
-        Me.Label15.Text = "Величина шага "
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(1075, 202)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(145, 17)
-        Me.Label16.TabIndex = 32
-        Me.Label16.Text = "Значение интеграла"
+        Me.Button4.Location = New System.Drawing.Point(50, 138)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(268, 42)
+        Me.Button4.TabIndex = 33
+        Me.Button4.Text = "Вставить пределы интегрирования"
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'Form5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1219, 628)
-        Me.Controls.Add(Me.Label16)
-        Me.Controls.Add(Me.Label15)
-        Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
@@ -369,24 +229,14 @@ Partial Class Form5
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.ListBox6)
-        Me.Controls.Add(Me.ListBox5)
-        Me.Controls.Add(Me.ListBox4)
         Me.Controls.Add(Me.ListBox3)
         Me.Controls.Add(Me.ListBox2)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form5"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -395,24 +245,14 @@ Partial Class Form5
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents ListBox2 As System.Windows.Forms.ListBox
     Friend WithEvents ListBox3 As System.Windows.Forms.ListBox
-    Friend WithEvents ListBox4 As System.Windows.Forms.ListBox
-    Friend WithEvents ListBox5 As System.Windows.Forms.ListBox
-    Friend WithEvents ListBox6 As System.Windows.Forms.ListBox
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
@@ -422,10 +262,6 @@ Partial Class Form5
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents Label14 As System.Windows.Forms.Label
-    Friend WithEvents Label15 As System.Windows.Forms.Label
-    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents Button4 As Button
 End Class
